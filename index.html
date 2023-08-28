@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <style>
+        h2 {
+            color: aqua
+        }
+    </style>
+
 </head>
 
 <body>
@@ -13,7 +19,6 @@
 
     <h3>1.1- ¿Qué significa CSS?</h3>
     <p>CSS significa hojas de estilo en cascada en español (Cascading Stylesheets).</p>
-
     <h3>1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS? </h3>
     <p>CSS es un lenguaje grafico que se sirve para presentar y darle estilo al
         contenido que deseemos y que se vea mucho mejor esteticamente. Puede cambiar la tipografía, los colores,
@@ -24,7 +29,27 @@
         ejemplo; "quiero que el titulo sea en letra cursiva y en color azul".</p>
     <h3>1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
         explicar sus elementos.</h3>
-    <p>selector+llave+propiedades+valor</p>
+    <dl>Anatomía de la regla de css
+        <dt>Selector</dt>
+        <dd>En este caso sería "P"</dd>
+        <dt>Llaves</dt>
+        <dd>{}</dd>
+        <dt>Propiedades</dt>
+        <dd>Sería "color"</dd>
+        <dt>Valores</dt>
+        <dd>Sería "red"</dd>
+    </dl>
+    <img width="400px" src="assets/anatomía.png" alt="regla css">
+    <h3>1.5- ¿Qué es un selector en CSS? </h3>
+    <p>Un selector en CSS es el elemtento HTML al cual le aplicaremos el estilo deseado, por ejemplo, si quisieramos
+        cambiar en color de algun titulo H1, nuestro selector será "h1".</p>
+    <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+    <p>ID es un tipo de selector que será unico en el programa HTML, por ejemplo, sirve para puntualizar mas
+        especificamente lo que queramos cambiar con CSS. <br> de clases. Este agrupa propiedades para poder modificarlas
+        con CSS de manera mas facil y rapida. Ejemplo: Si necesito cambiar el color de 20 etiqueas<br> universal. Este
+        nos permite aplicar un
+        estilo a todos los elementos HTML, se indica con un *.<br> De etiquetas. Este selector se le aplica a las
+        etiquetas que queramos del</p>
 </body>
 
 </html>
