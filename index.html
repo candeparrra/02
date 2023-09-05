@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <style>
-        h2 {
-            color: aqua
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilos3.css">
 
 </head>
 
 <body>
-    <h2>Iniciando con CSS</h2>
+    <h2>Trabajo Practico 03</h2>
+    <h3 class="nombre">Iniciando con CSS</h3>
+    <h4 class="nombre"> Candela Parra</h4>
+
 
     <h3>1.1- ¿Qué significa CSS?</h3>
     <p>CSS significa hojas de estilo en cascada en español (Cascading Stylesheets).</p>
@@ -44,12 +43,114 @@
     <p>Un selector en CSS es el elemtento HTML al cual le aplicaremos el estilo deseado, por ejemplo, si quisieramos
         cambiar en color de algun titulo H1, nuestro selector será "h1".</p>
     <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
-    <p>ID es un tipo de selector que será unico en el programa HTML, por ejemplo, sirve para puntualizar mas
-        especificamente lo que queramos cambiar con CSS. <br> de clases. Este agrupa propiedades para poder modificarlas
-        con CSS de manera mas facil y rapida. Ejemplo: Si necesito cambiar el color de 20 etiqueas<br> universal. Este
-        nos permite aplicar un
-        estilo a todos los elementos HTML, se indica con un *.<br> De etiquetas. Este selector se le aplica a las
-        etiquetas que queramos del</p>
+    <dl>
+        <dt>ID
+        <dd>Es un tipo de selector que será unico en el programa HTML, por ejemplo, sirve para puntualizar mas
+            especificamente lo que queramos cambiar con CSS.</dd>
+        <dt>Clases</dt>
+        <dd>Este agrupa propiedades para poder modificarlas
+            con CSS de manera mas facil y rapida. Ejemplo: Si tengo 20 etiqueas "h1" pero solo deseo agregarle algun
+            estilo a 10 de ellas, la manera mas facil y rapida de hacerlo es con clases.</dd>
+        <dt>Universal</dt>
+        <dd>Este nos permite aplicar un estilo a <u>todos</u> los elementos HTML y se indica con un *. </dd>
+        <dt>Etiquetas</dt>
+        <dd>Este selector se le aplica a las etiquetas que queramos del proyecto HTML.</dd>
+        <dt>Descendente: </dt>
+    </dl>
+    <h3>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS? </h3>
+    <ol>
+        <li>El navegador carga o recibe el HTML</li>
+        <li>Convierte el HTML en DOM (Modelo de Objetos del Documento), este representa al documento en la memoria del
+            ordenador.</li>
+        <li>El navegador busca la mayor parte de los recursos vinculados al documento HTML.</li>
+        <li>Paso "árbol de renderización", el navegador analiza el CSS, identifica los diferentes tipo
+            de selectores, ordena en "cubos" las reglas y calcula cuales se aplicarán segun el tipo de selector. </li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.</li>
+        <li>Paso "pintura", se ve en pantalla, la pagina finalizada.</li>
+    </ol>
+    <h3>1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+    <dl>
+        <dt>Forma 1 - Etiqueta Style</dt>
+        <dd>Está dentro de "head" y se aplicará a todo nuestro HTML.
+            Ejemplo:style
+            p {
+            color: red;}
+        </dd><br>
+        <dt>Forma 2 - Atributo Style</dt>
+        <dd>Ésta aplicará el estilo solamente a una etiqueta en especifico, va dentro de "body".<br>
+            Ejemplo: p style="color:red;">Esto es un párrafo rojo </dd><br>
+        <dt>Forma 3 - Archivo externo</dt>
+        <dd>En esta forma, vinculamos un archivo CSS dentro de nuestro HTML. <br>
+            Ejemplo:
+            link href="estilos.css" rel="stylesheet"</dd>
+    </dl>
+    <h3>1.9- Escribir la URL de los dos diseños seleccionados y responder: las etiquetas dentro de body ¿son iguales?
+        ¿Qué es
+        lo distinto? ¿Qué contribuye al cambio de diseño?</h3>
+    <p><a href="http://www.csszengarden.com/151/">Diseño 1</a> </p>
+    <p><a href="http://www.csszengarden.com/219/">Diseño 2</a> </p>
+    <p>Las etiquetas y todo el body son exactamente iguales, la diferencia de diseño se da debido al CSS de cada pagina,
+        en la parte de "head" es en donde difieren.</p>
+    <h3>Abrir los dos archivos CSS de los diseños seleccionados. ¿Son los mismos?
+    </h3>
+    <p>No, son completamente diferentes.</p>
+    <h3>En líneas generales, el mismo HTML ¿puede tener diferentes diseños?</h3>
+    <p>Si, el mismo HTML puede tener muchos diferentes diseños. De hecho, podemos ver 2 paginas webs completamente
+        diferentes, pero que tienen el mismo HTML</p>
+    <h3>2.0- Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada
+        propiedad.</h3>
+    <dl>
+        <dt>Color</dt>
+        <dd>color: orange;</dd>
+        <dd>color: #009900;</dd>
+        <dd>color: rgb(34 12 64 / 0.6);</dd><br>
+        <dt>Background-color
+        </dt>
+        <dd> background-color: teal;</dd>
+        <dd> background-color: rgb(153, 102, 153);</dd>
+        <dd> background-color: transparent;</dd><br>
+
+        <dt>font-size</dt>
+        <dd>font-size: xx-large</dd>
+        <dd>font-size: 16px;</dd>
+        <dd>font-size: 250%</dd><br>
+
+        <dt>font-weight</dt>
+        <dd>font-weight: lighter;</dd>
+        <dd>font-weight: 100;</dd>
+        <dd>font-weight: inherit;</dd>
+        <dt>font-style</dt>
+        <dd>font-style: italic;</dd>
+        <dd> font-style: oblique; </dd>
+        <dd>font-style: normal;</dd>
+        <dt>font-family</dt>
+        <dd>font-family: "Gill Sans Extrabold"</dd>
+        <dd>font-family: Courier</dd>
+        <dd>font-family: "Lucida Console"</dd>
+        <dt>text-align</dt>
+        <dd>text-align: left;</dd>
+        <dd>text-align: right;</dd>
+        <dd>text-align: center;</dd>
+        <dt>text-decoration</dt>
+        <dd>text-decoration: underline red;</dd>
+        <dd>text-decoration: underline;</dd>
+        <dd>text-decoration: underline overline;</dd>
+        <dt>text-transform</dt>
+        <dd>text-transform: capitalize;</dd>
+        <dd>text-transform: lowercase;</dd>
+        <dd>text-transform: uppercase;</dd>
+        <dt>letter-spacing</dt>
+        <dd>letter-spacing: .2rem;</dd>
+        <dd>letter-spacing: 3px;</dd>
+        <dd>letter-spacing: -2px;</dd>
+        <dt>line-height</dt>
+        <dd>line-height: 1.2;</dd>
+        <dd>line-height: 120%;</dd>
+        <dd>line-height: 32px;</dd>
+        </dl>
+
 </body>
+
 
 </html>
